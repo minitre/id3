@@ -1,0 +1,41 @@
+div#about {
+
+    margin-top: 300px;
+
+
+
+    display: flex;
+
+
+
+
+
+
+    justify-content:  center;
+}
+
+
+
+
+div#text {
+
+    width: 700px;
+
+
+    height: 300px;
+
+
+
+
+    margin-top: 30px;  
+    margin-bottom: 30px;   
+}
+
+
+
+
+#text3 {
+
+    
+    font-size: large;
+}

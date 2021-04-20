@@ -1,0 +1,199 @@
+<link rel="stylesheet" href="style2.css">
+
+<link rel="stylesheet" href="style5.css">
+
+
+
+
+
+
+
+<div id = "navi">
+
+            <a>Home</a>
+            <a>Mens</a>
+            <a>Womens</a>
+            <a>About us</a>
+</div>
+
+
+<div id="items">
+
+
+
+                <div class = "item">
+                        <img src="t-shirt-blue-bunny small.jpg" alt = "shirt"   >
+
+
+                
+                        <span id = "i1name">
+                                Super shirt blue
+                        </span>
+
+
+                        <span id = 'i1price'>
+                                        $ 15.99000
+                        </span>
+
+
+
+                </div>
+
+
+
+                <div class = "item">             
+
+                                <img src="t-shirt-blue-bunny small.jpg" alt = "shirt"   >
+
+                                        <span>
+                                                Ultra shirt
+                                        </span>
+
+
+                                        <span>
+                                                        $ 99.99
+                                        </span>
+
+                </div>
+
+                <div class = "item">
+
+                                <img src="t-shirt-blue-bunny small.jpg" alt = "shirt"   >
+
+                                        <span>
+                                                Mega shirt
+                                        </span>
+
+
+                                        <span>
+                                                        $199.99
+                                        </span>
+                </div>
+
+
+                <div class = "item">
+
+                                <img src = "t-shirt-blue-bunny small.jpg" alt = "shirt"   >
+
+                                        <span>
+                                                Old shirt
+                                        </span>
+
+
+                                        <span>
+                                                        $900.01
+                                        </span>
+
+                </div>
+
+                
+        </div>
+
+
+
+
+
+<script  src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+
+  <script src="javascripts/script12.js"></script>
+
+  <script src="javascripts/script2.js"></script>
+
+  
+  <script src="script3.js"></script>
+
+
+
+  <script>
+
+
+cons0le = {}
+
+cons0le.id1 = "" ;
+
+cons0le.id2 = "" ;
+
+cons0le.log = function(a) {     
+        
+        
+        if (a == "a")  cons0le.id1 = cons0le.id1 + "a" ;
+
+
+
+        if (a == "b")  cons0le.id2 = cons0le.id2 + "b"  ;
+
+}
+
+
+id1 = setInterval( _ => {
+
+
+        
+        if (window.myd) {
+
+
+
+        i1name.innerHTML = myd.name;
+
+        i1price.innerHTML = myd.price;
+
+
+        i1name.set = true;
+
+
+
+
+                }
+
+
+
+
+                cons0le.log("a");
+
+
+
+} , 3 );
+
+
+id2 = setInterval( _ => {
+
+        if (i1name.set) {
+
+
+
+                clearInterval(id1);
+                clearInterval(id2);
+
+
+
+
+        }
+
+
+        cons0le.log("b");
+
+
+        if ( cons0le.id1.length > 3000) {
+
+
+                clearInterval(id1);
+                clearInterval(id2);
+
+                console.log(" Error: timeout... refresh page to try again");
+
+        }
+
+
+
+} , 3 );
+
+
+
+
+
+
+</script>
+
+
